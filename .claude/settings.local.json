@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /c/dev/EUSTAT/inkudea-canal-web/frontend/.claude)",
+      "Bash(mv /c/dev/EUSTAT/inkudea-canal-web/frontend/AGENTS.md /c/dev/EUSTAT/inkudea-canal-web/frontend/.claude/AGENTS.md)",
+      "Bash(mkdir -p C:/dev/EUSTAT/inkudea-canal-web/frontend/.claude/SKILLS)",
+      "Bash(mv C:/dev/EUSTAT/inkudea-canal-web/frontend/.claude/BOTONES.md C:/dev/EUSTAT/inkudea-canal-web/frontend/.claude/SKILLS/BOTONES.md)",
+      "Bash(mv C:/dev/EUSTAT/inkudea-canal-web/frontend/.claude/FORMULARIOS_UNSAVED_CHANGES.md C:/dev/EUSTAT/inkudea-canal-web/frontend/.claude/SKILLS/FORMULARIOS_UNSAVED_CHANGES.md)"
+    ]
+  }
+}
