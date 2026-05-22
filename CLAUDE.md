@@ -223,6 +223,28 @@ Para el idioma actual del store:
 const currentLocale = useAppSelector((state) => state.locale.currentLocale); // 'es' | 'eu' | 'en'
 ```
 
+### Regla obligatoria: traducir todos los literales
+
+**Nunca** dejar strings hardcodeados visibles al usuario en JSX ni en props de texto. Esto incluye:
+- Texto de botones, labels, títulos, mensajes
+- `placeholder`, `alt`, `aria-label`
+- Mensajes de error y validación
+- Textos de notificaciones / toasts
+
+Siempre usar `t("clave", "fallback")` y añadir la clave en los tres JSONs (`es`, `eu`, `en`).
+
+Si el componente no tiene carpeta `locales/`, crearla siguiendo la estructura estándar:
+
+```
+ComponentName/
+└── locales/
+    ├── es.json
+    ├── eu.json
+    └── en.json
+```
+
+El webpack recoge automáticamente cualquier `src/components/**/locales/{lang}.json` y lo fusiona en `app.json`. **No hace falta configuración adicional**, pero sí es necesario reiniciar el dev server si se añaden archivos nuevos durante una sesión activa.
+
 ---
 
 ## HTTP / API
