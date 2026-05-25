@@ -326,3 +326,4 @@ Documentación de convenciones del proyecto en `.claude/SKILLS/`:
 |---|---|---|
 | `BOTONES/` | `SKILL.md` | Estilos y clases CSS para botones de acción (colores, hover, estados disabled) |
 | `FORMULARIOS_UNSAVED_CHANGES/` | `SKILL.md` | Patrón `useUnsavedChangesWarning` para proteger formularios con cambios sin guardar |
+| `MANEJO_ERRORES/` | `SKILL.md` | Cuándo usar toast vs. navegar a error page; thunks Redux vs. llamadas directas a api |
