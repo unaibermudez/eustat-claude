@@ -168,7 +168,7 @@ return (
 
 **Todo formulario que pueda cerrarse sin guardar debe usar `useUnsavedChangesWarning`.**
 
-Ver `.claude/SKILLS/FORMULARIOS_UNSAVED_CHANGES.md` para el patrón detallado. En resumen:
+Ver `.claude/SKILLS/FORMULARIOS_UNSAVED_CHANGES/SKILL.md` para el patrón detallado. En resumen:
 
 ```typescript
 import { useUnsavedChangesWarning } from "path/to/useUnsavedChangesWarning";
@@ -269,7 +269,7 @@ Los interceptores manejan automáticamente:
 - Variables globales en `src/styles/variables.scss` — usar siempre variables, nunca colores hardcodeados
 - Colores principales: `$primary` (#013161 azul EUSTAT), `$white`
 - Hover de botones: fondo `#c69507` (amarillo dorado), texto `$primary`
-- Ver `.claude/SKILLS/BOTONES.md` para la convención completa de botones de acción
+- Ver `.claude/SKILLS/BOTONES/SKILL.md` para la convención completa de botones de acción
 
 Cada componente importa su propio `.scss`. No hay CSS-in-JS.
 
@@ -322,7 +322,7 @@ toast.error(message, { containerId: "offcanvas-toast" });
 
 Documentación de convenciones del proyecto en `.claude/SKILLS/`:
 
-| Archivo | Contenido |
-|---|---|
-| `BOTONES.md` | Estilos y clases CSS para botones de acción |
-| `FORMULARIOS_UNSAVED_CHANGES.md` | Patrón `useUnsavedChangesWarning` en formularios |
+| Carpeta | Archivo | Contenido |
+|---|---|---|
+| `BOTONES/` | `SKILL.md` | Estilos y clases CSS para botones de acción (colores, hover, estados disabled) |
+| `FORMULARIOS_UNSAVED_CHANGES/` | `SKILL.md` | Patrón `useUnsavedChangesWarning` para proteger formularios con cambios sin guardar |
